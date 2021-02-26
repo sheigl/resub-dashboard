@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+    color: #333;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.flex {
+    display: flex;
+    &.justify-content-center {
+        justify-content: center;
+    }
+    &.align-items-center {
+        align-items: center;
+    }
+}
+
+@for $i from 1 to 10 {
+    .mt-#{$i} {
+        margin-top: #{$i}px;
+    }
+    .mb-#{$i} {
+        margin-bottom: #{$i}px;
+    }
+    .mr-#{$i} {
+        margin-right: #{$i}px;
+    }
+    .ml-#{$i} {
+        margin-left: #{$i}px;
+    }
+    .m-#{$i} {
+        margin: #{$i}px;
+    }
+    .pt-#{$i} {
+        padding-top: #{$i}px;
+    }
+    .pb-#{$i} {
+        padding-bottom: #{$i}px;
+    }
+    .pr-#{$i} {
+        padding-right: #{$i}px;
+    }
+    .pl-#{$i} {
+        padding-left: #{$i}px;
+    }
+    .p-#{$i} {
+        padding: #{$i}px;
+    }
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mb-auto {
+    margin-bottom: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+.ml-auto {
+    margin-left: auto;
+}

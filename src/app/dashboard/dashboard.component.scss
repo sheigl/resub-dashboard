@@ -1,0 +1,36 @@
+.grid-container {
+    margin: 20px;
+}
+
+.dashboard-card {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background-color: #f7f7f7;
+}
+
+.more-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.dashboard-card-content {
+    table {
+        width: 100%;
+    }
+}
+
+.mat-card-header .mat-card-title {
+    margin-bottom: 20px;
+}
+
+.mat-card-header {
+    display: block;
+}
+
+.mat-form-field {
+    display: block;
+}
