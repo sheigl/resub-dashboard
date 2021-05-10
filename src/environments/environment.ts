@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://192.168.4.200:1880'
+  baseUrl: 'http://excel2json'
 };
 
 /*
