@@ -12,10 +12,14 @@ export class FileService {
   }
 
   getResubFiles() {
-    return this.http.get<GetFilesResult>(`${this.baseUrl}/resub/files`);
+    return this.http.get<GetFilesResult[]>(`${this.baseUrl}/file/resub`);
+  }
+
+  deleteFile(file: any) {
+    return this.http.delete<void>(`${environment.baseNodeRedUrl}/file/resub?filename=${file.originalFilename}`);
   }
 
   submitResub(file: any) {
-    return this.http.post<any>(`${this.baseUrl}/resub/files`, file);
+    return this.http.post<any>(`${environment.baseNodeRedUrl}/file/resub`, file);
   }
 }

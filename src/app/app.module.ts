@@ -18,13 +18,17 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { LayoutModule } from '@angular/cdk/layout'
 import { FormsModule } from '@angular/forms';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { TableComponentComponent } from './shared/table-component/table-component.component';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DashboardComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    TableComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,9 @@ import { FormsModule } from '@angular/forms';
     MatCardModule,
     LayoutModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [FileService],
   bootstrap: [AppComponent]

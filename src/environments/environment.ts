@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://excel2json'
+  baseUrl: 'http://192.168.4.200:1881/api',
+  baseNodeRedUrl: 'http://192.168.4.200:1880',
+  resubFolder: '/data/uploads/resub/'
 };
 
 /*

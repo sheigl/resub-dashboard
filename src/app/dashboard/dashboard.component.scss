@@ -1,14 +1,10 @@
-.grid-container {
-    margin: 20px;
-}
 
-.dashboard-card {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
+.card {
     background-color: #f7f7f7;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
 }
 
 .more-button {
@@ -17,17 +13,11 @@
     right: 10px;
 }
 
-.dashboard-card-content {
-    table {
-        width: 100%;
-    }
-}
-
-.mat-card-header .mat-card-title {
+.card-header .card-title {
     margin-bottom: 20px;
 }
 
-.mat-card-header {
+.card-header {
     display: block;
 }
 

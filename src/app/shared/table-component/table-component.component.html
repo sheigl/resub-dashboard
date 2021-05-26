@@ -1,0 +1,12 @@
+<mat-paginator #paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+<div class="table-container">
+    <table mat-table [dataSource]="dataSource" matSort>
+        <ng-container *ngFor="let key of options.objKeys" [matColumnDef]=key.header>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> {{ key.header }} </th>
+            <td mat-cell *matCellDef="let row" style="white-space: pre"> {{ row[key.objKey] }} </td>
+        </ng-container>
+    
+        <tr mat-header-row *matHeaderRowDef="options.displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: options.displayedColumns;"></tr>
+    </table>
+</div>

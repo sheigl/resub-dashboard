@@ -12,14 +12,18 @@ RUN git config --global user.email "sheigl@gmail.com" && \
 
 RUN npm install -g @angular/cli
 
-WORKDIR /src
+WORKDIR /src/resub-dashboard
 
-RUN git clone https://github.com/sheigl/resub-dashboard.git
+#RUN git clone https://github.com/sheigl/resub-dashboard.git
+
+COPY ./package.json .
+RUN npm install
 
 WORKDIR /src/resub-dashboard
 
-RUN npm install && \
-    ng build --prod
+COPY . .
+
+RUN ng build --prod
 
 FROM nginx
 
